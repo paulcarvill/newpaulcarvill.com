@@ -18,6 +18,10 @@ ul {
   padding-left: 18px;
 }
 
+h1 {
+  display: none;
+}
+
 h2 {
   font-size: 36px;
   line-height: 36px;
@@ -118,6 +122,30 @@ h2, p, li {
   -moz-column-rule: 1px solid #d3d3d3; /* Firefox */
   column-rule: 1px solid #444;
 }
+
+#menu {
+  position: fixed;
+  left: 8px;
+  top: 8px;
+  width: 16px;
+}
+
+#menu div,
+#menu a {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
+  padding: 8px;
+  background: #fff;
+  box-sizing: border-box;
+  transition: background 200ms ease;
+}
+
+#menu div:hover,
+#menu a:hover {
+  background: #666;
+} 
 
 @media (max-width: 600px) {
   #container {
